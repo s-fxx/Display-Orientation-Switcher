@@ -1,21 +1,6 @@
 #include <Windows.h>
 #include <stdio.h>
 
-/*
- * DESCRIPTION
- * This program toggles between landscape and portrait mode of the current display.
- *
- * NOTICE
- * Windows 2000 is not supported.
- *
- * SOURCES
- * https://stackoverflow.com/questions/28104898/controlling-windows-screen-orientation-in-c-qt-windows
- * https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-changedisplaysettingsa
- * https://docs.microsoft.com/en-us/windows/win32/api/wingdi/ns-wingdi-devmodea
- * https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-enumdisplaysettingsa
- *
- */
-
 void PutDispChangeError(LONG Result)
 {
 	// DISP_CHANGE_RESTART;
