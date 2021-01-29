@@ -14,13 +14,13 @@ void PutDispChangeError(LONG Result)
 
 	switch (Result)
 	{
-		case 1: puts(" -> DISP_CHANGE_RESTART     - The computer must be restarted for the graphics mode to work."); break;
-		case 0: puts(" -> DISP_CHANGE_SUCCESSFUL  - The settings change was successful."); break;
-		case -1: puts(" -> DISP_CHANGE_FAILED      - The display driver failed the specified graphics mode."); break;
-		case -2: puts(" -> DISP_CHANGE_BADMODE     - The graphics mode is not supported."); break;
-		case -3: puts(" -> DISP_CHANGE_NOTUPDATED  - Unable to write settings to the registry."); break;
-		case -4: puts(" -> DISP_CHANGE_BADFLAGS    - An invalid set of flags was passed in."); break;
-		case -5: puts(" -> DISP_CHANGE_BADPARAM    - An invalid parameter was passed in. This can include an invalid flag or combination of flags."); break;
+		case 1:  puts(" -> DISP_CHANGE_RESTART - The computer must be restarted for the graphics mode to work."); break;
+		case 0:  puts(" -> DISP_CHANGE_SUCCESSFUL - The settings change was successful."); break;
+		case -1: puts(" -> DISP_CHANGE_FAILED - The display driver failed the specified graphics mode."); break;
+		case -2: puts(" -> DISP_CHANGE_BADMODE - The graphics mode is not supported."); break;
+		case -3: puts(" -> DISP_CHANGE_NOTUPDATED - Unable to write settings to the registry."); break;
+		case -4: puts(" -> DISP_CHANGE_BADFLAGS - An invalid set of flags was passed in."); break;
+		case -5: puts(" -> DISP_CHANGE_BADPARAM - An invalid parameter was passed in. This can include an invalid flag or combination of flags."); break;
 		case -6: puts(" -> DISP_CHANGE_BADDUALVIEW - The settings change was unsuccessful because the system is DualView capable."); break;
 		default:
 			printf("Given result does not belong to any constant: %li!\n", Result);
